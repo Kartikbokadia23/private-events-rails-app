@@ -23,7 +23,7 @@
     <% elsif @event.attendees.include?(current_user) %>
       <span class="float-right text-success">Attending  <i class="fa fa-check"></i></span> 
     <% else %>
-      <%= link_to 'attend', event_attendance_event_path, class: "btn btn-primary" unless @event.date_time < Time.now %>
+      <%= link_to 'attend', event_attendance_event_path, class: "btn btn-primary"%>
     <% end %>
   </div>
 <% end %>
